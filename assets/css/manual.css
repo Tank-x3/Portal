@@ -1,0 +1,102 @@
+/* ===============================================
+   manual.css - 説明ページ用のスタイル
+   =============================================== */
+
+/* メインコンテンツコンテナ */
+.manual-container {
+    max-width: 840px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* 見出し */
+.manual-container h1,
+.manual-container h2 {
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+    margin-top: 2.5rem;
+}
+
+.manual-container h1:first-child {
+    margin-top: 0;
+}
+
+/* 画像 */
+.manual-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    display: block;
+    margin: 1rem auto;
+}
+
+/* ===============================================
+   セクションとブロック
+   =============================================== */
+.manual-section {
+    margin-top: 3.5rem;
+}
+
+.manual-section:first-of-type {
+    margin-top: 0;
+}
+
+.manual-section h2 {
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.detail-block h3 {
+    border-left: 5px solid #007bff;
+    padding-left: 0.8rem;
+    font-size: 1.4rem;
+    margin-top: 3rem;
+}
+
+/* ===============================================
+   作成例セクション
+   =============================================== */
+.example-item {
+    margin-top: 2.5rem;
+}
+
+.example-label {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+}
+
+.example-item img {
+    margin-top: 0;
+}
+
+/* ===============================================
+   目次（Table of Contents）
+   =============================================== */
+.toc {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    padding: 1rem 1.5rem;
+    margin: 2rem 0;
+}
+
+.toc ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.toc li {
+    margin: 0.5rem 0;
+}
+
+.toc a {
+    text-decoration: none;
+    font-weight: bold;
+}

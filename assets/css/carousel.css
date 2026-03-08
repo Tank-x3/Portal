@@ -1,0 +1,79 @@
+/* ===============================================
+   carousel.css - カルーセル（スライダー）
+   =============================================== */
+
+.carousel {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 1.5rem;
+}
+
+.carousel-slides {
+    position: relative;
+}
+
+.carousel-slide {
+    display: none; /* JSで.activeを付けて表示 */
+}
+
+.carousel-slide.active {
+    display: block;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.carousel-slide img {
+    width: 100%;
+    margin: 0;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+}
+
+.carousel-caption {
+    padding: 1rem 1.5rem;
+    font-size: 0.95rem;
+}
+
+.carousel-caption p {
+    margin: 0.5rem 0;
+}
+
+/* 操作UI */
+.carousel-ui {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1.5rem;
+    background-color: #f8f9fa;
+}
+
+.carousel-ui button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.carousel-ui button:hover {
+    background-color: #0056b3;
+}
+
+.carousel-ui button:disabled {
+    background-color: #c0c0c0;
+    cursor: not-allowed;
+}
+
+.carousel-counter {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
