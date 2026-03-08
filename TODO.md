@@ -22,27 +22,20 @@
 - [x] フッター著作権表記を「タンクの人」に更新
 - [x] 新規ツール9種のカード追加 (全15ツール掲載)
 - [x] Writening / あにまん掲示板の説明文内リンク修正
+- [x] 全15ツールのカード説明文を正確な内容に書き直し
 
 ## フェーズ3: 説明ページ作成 🔧
 - [x] 説明ページテンプレート (template.html)
-- [x] キャラシート作成機 (charasheet.html) + 画像素材
-- [ ] プロフィールメーカー (profiles.html)
-- [ ] 交流情報まとめ (interaction.html)
-- [ ] ライブ情報まとめ (live.html)
-- [ ] Writening入力支援 (writening.html)
-- [ ] あにまん掲示板DB (animanch.html)
-- [ ] オリウマレース開催支援 (race_tool.html)
-- [ ] オリウマデータベース (oriuma_db.html)
-- [ ] オリウマガチャ (oriuma_gacha.html)
-- [ ] クイズを遊ぼう (quizplayer.html)
-- [ ] マスターコーヒー (coffee.html)
-- [ ] タッグ戦チーム順位集計 (tagracecalc.html)
-- [ ] 競走馬血統表 (horse_pedigree.html)
-- [ ] オリウマサポカガチャ (oriuma_sp_gacha.html)
-- [ ] モブウマ娘メーカー (mobumamusume.html)
+- [x] 全15ツールの説明ページ作成 (テキストベース)
+- [ ] スクリーンショット撮影・追加 (SCREENSHOT_PLAN.md 参照)
+  - [ ] 優先度A: profiles, interaction, animanch
+  - [ ] 優先度B: live, race_tool, oriuma_db, horse_pedigree
+  - [ ] 優先度C: writening, oriuma_gacha, quizplayer, coffee, tagracecalc, oriuma_sp_gacha, mobumamusume
+- [ ] 説明ページにカルーセル追加 (スクリーンショット準備後)
 
 ## フェーズ4: 仕上げ ❌
 - [ ] カード画像をプレースホルダーから実画像に差し替え
+- [ ] 説明ページの内容精査 (ユーザーによるレビュー)
 
 ## フェーズ5: デプロイ・公開 ✅
 - [x] Gitリポジトリ初期化
@@ -54,6 +47,4 @@
 
 ## 既知の課題
 - ツール3 (交流情報) とツール4 (ライブ情報) はツール側でスマホ表示未対応/未最適化
-- カルーセルのステップ1でPC/スマホ両方のキャプションが常に表示される
-  (デバイス判定による出し分けは未実装)
-- 新規追加ツール (7-15) の説明文はリポジトリのdescriptionから仮記載。正確な内容に要修正
+- charasheet.htmlのカルーセルステップ1でPC/スマホ両方のキャプションが常に表示される
