@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>あにまん掲示板 お気に入りスレッドDBツールの使い方 - oriuma Tools</title>
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/manual.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <a href="../index.html">
+                <img src="../assets/images/portal/logo.png" alt="Logo" class="logo">
+            </a>
+            <div class="header-text">
+                <h1><a href="../index.html" class="header-link">oriuma Tools</a></h1>
+                <p>AIと一緒に作ったWebツールを公開しています。</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="manual-container">
+
+            <h1>あにまん掲示板 お気に入りスレッドDBツールの使い方</h1>
+
+            <p>あにまん掲示板のお気に入りスレッド情報をデータベースとして管理するためのツールです。「抽出ツール」と「編集ツール」の2つのツールで構成されており、スレッド情報の抽出からタグ付け・検索・エクスポートまで一貫して行えます。</p>
+
+            <section>
+                <h2>基本的な使い方</h2>
+                <ol>
+                    <li><strong>抽出ツール</strong>で、あにまん掲示板のHTML/MHTファイルを読み込み、スレッド情報を抽出してJSON形式のデータベースを作成します。</li>
+                    <li>抽出したJSONファイルを<strong>編集ツール</strong>で読み込みます。</li>
+                    <li>各スレッドにタグを付けたり、説明文を追記したりして情報を整理します。</li>
+                    <li>AND/OR検索やフィルタ機能を使って、目的のスレッドを素早く見つけます。</li>
+                    <li>整理が完了したら、閲覧用HTMLとしてエクスポートしたり、JSONとして保存したりします。</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>主な機能</h2>
+                <ul>
+                    <li><strong>抽出ツール:</strong> HTML/MHTファイルからスレッドのタイトル・URL等の情報を自動抽出し、JSON化</li>
+                    <li><strong>編集ツール:</strong> 抽出したデータベースの編集・管理</li>
+                    <li>スレッドへのタグ付けと説明文の追記</li>
+                    <li>一括タグ編集機能（複数スレッドにまとめてタグを設定）</li>
+                    <li>AND/OR検索およびフィルタリング機能</li>
+                    <li>閲覧用HTMLエクスポート</li>
+                    <li>既存データベースとの統合時のデータ競合解決機能</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>入力と出力</h2>
+                <p><strong>入力:</strong> 抽出ツールではあにまん掲示板のHTML/MHTファイルを読み込みます。編集ツールでは抽出済みのJSONファイルを読み込みます。</p>
+                <p><strong>出力:</strong> 抽出ツールからはスレッド情報のJSONファイルが出力されます。編集ツールからは編集済みのJSONファイル、および閲覧用のHTMLファイルをエクスポートできます。</p>
+            </section>
+
+            <section>
+                <h2>補足情報</h2>
+                <ul>
+                    <li>抽出ツールと編集ツールは別々のページとして構成されています。用途に応じて使い分けてください。</li>
+                    <li>既存のデータベース（JSONファイル）に新しいデータを統合する際、重複するスレッドが検出された場合はデータ競合の解決画面が表示されます。</li>
+                    <li>一括タグ編集機能を使うと、複数のスレッドに対して効率的にタグを付与・削除できます。</li>
+                    <li>HTML/MHTファイルはあにまん掲示板のお気に入りページを保存したものを使用してください。</li>
+                </ul>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="https://tank-x3.github.io/ContactForm/" target="_blank" rel="noopener noreferrer">お問い合わせ</a>
+        </div>
+        <p>&copy; 2025 タンクの人</p>
+    </footer>
+
+</body>
+</html>

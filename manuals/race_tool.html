@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>オリウマレース開催支援ツールの使い方 - oriuma Tools</title>
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/manual.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <a href="../index.html">
+                <img src="../assets/images/portal/logo.png" alt="Logo" class="logo">
+            </a>
+            <div class="header-text">
+                <h1><a href="../index.html" class="header-link">oriuma Tools</a></h1>
+                <p>AIと一緒に作ったWebツールを公開しています。</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="manual-container">
+
+            <h1>オリウマレース開催支援ツールの使い方</h1>
+
+            <p>ダイスロールを使ったレースシミュレーションツールです。出走者の登録からレース進行、結果の保存まで、レース開催に必要な一連の流れをサポートします。</p>
+
+            <section>
+                <h2>基本的な使い方</h2>
+                <ol>
+                    <li>レース設定を行います。中盤ダイス回数（0〜4回）とフルゲート人数（1〜100人）を指定してください。</li>
+                    <li>出走者を登録します。名前、脚質（大逃げ / 逃げ / 先行 / 差し / 追込の5種類）、固有スキル（安定型 / ギャンブル型）を設定します。</li>
+                    <li>全出走者の登録が完了したら、レースを開始します。</li>
+                    <li>レースはフェーズ制（Start → Pace → Mid → End）で自動進行します。</li>
+                    <li>レース終了後、順位表が表示されます。上位3位はハイライト表示されます。</li>
+                    <li>順位表はテキストコピーまたはPNG画像として保存できます。</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>主な機能</h2>
+                <ul>
+                    <li>ダイスロールベースのレースシミュレーション</li>
+                    <li>レース設定のカスタマイズ（中盤ダイス回数: 0〜4回、フルゲート人数: 1〜100人）</li>
+                    <li>5種類の脚質設定（大逃げ / 逃げ / 先行 / 差し / 追込）</li>
+                    <li>2種類の固有スキル（安定型: 5+1d10 / ギャンブル型: 1d20）</li>
+                    <li>フェーズ制レース進行（Start → Pace → Mid → End）</li>
+                    <li>順位表のテキストコピー機能</li>
+                    <li>順位表のPNG画像保存機能</li>
+                    <li>上位3位のハイライト表示</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>入力と出力</h2>
+                <p><strong>入力:</strong> レース設定（中盤ダイス回数・フルゲート人数）、出走者情報（名前・脚質・固有スキル）</p>
+                <p><strong>出力:</strong> レース結果の順位表（テキストまたはPNG画像）</p>
+            </section>
+
+            <section>
+                <h2>補足情報</h2>
+                <ul>
+                    <li>脚質によってフェーズごとのダイス補正が異なります。レース展開に大きく影響するため、出走者の特徴に合わせて選択してください。</li>
+                    <li>安定型スキル（5+1d10）は最低保証があり安定した成績が期待できます。ギャンブル型スキル（1d20）は振れ幅が大きく、大勝ちも大負けもあり得ます。</li>
+                    <li>フルゲート人数は最大100人まで設定可能です。</li>
+                    <li>中盤ダイス回数を増やすと、レース中盤の展開がより変動しやすくなります。</li>
+                </ul>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="https://tank-x3.github.io/ContactForm/" target="_blank" rel="noopener noreferrer">お問い合わせ</a>
+        </div>
+        <p>&copy; 2025 タンクの人</p>
+    </footer>
+
+</body>
+</html>

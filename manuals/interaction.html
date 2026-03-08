@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>交流情報まとめツールの使い方 - oriuma Tools</title>
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/manual.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <a href="../index.html">
+                <img src="../assets/images/portal/logo.png" alt="Logo" class="logo">
+            </a>
+            <div class="header-text">
+                <h1><a href="../index.html" class="header-link">oriuma Tools</a></h1>
+                <p>AIと一緒に作ったWebツールを公開しています。</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="manual-container">
+
+            <h1>オリウマキャラ間交流情報まとめツールの使い方</h1>
+
+            <p>オリウマキャラクター同士の交流情報をデータベースとして構築・管理するためのツールです。中心キャラクターを軸に、他キャラクターとの関係性やエピソードを体系的に記録できます。</p>
+
+            <section>
+                <h2>基本的な使い方</h2>
+                <ol>
+                    <li>まず中心キャラクターを設定します。このキャラクターを軸として交流データベースを構築していきます。</li>
+                    <li>交流相手のキャラクターを登録します。育成・モブ・NPCの3カテゴリから選択でき、一括登録にも対応しています。</li>
+                    <li>各キャラクターとの関係タグ（友人・ライバルなど）や初交流の情報を設定します。</li>
+                    <li>個別のエピソードを記録していきます。交流の詳細や思い出などを自由に記述できます。</li>
+                    <li>タグ検索やフィルタリング・ソート機能を使って、登録した交流情報を整理・閲覧します。</li>
+                    <li>作業が終わったら、必ずJSON保存でデータをエクスポートしてください。</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>主な機能</h2>
+                <ul>
+                    <li>中心キャラクターを軸とした交流データベースの構築</li>
+                    <li>キャラクターの一括登録（育成 / モブ / NPCの3カテゴリ）</li>
+                    <li>関係タグの設定と初交流情報の記録</li>
+                    <li>個別エピソードの記録・管理</li>
+                    <li>タグ検索・フィルタリング・ソート機能</li>
+                    <li>JSON形式でのデータ保存・読み込み</li>
+                    <li>Markdown形式およびプレーンテキスト形式でのまとめ出力</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>入力と出力</h2>
+                <p><strong>入力:</strong> 中心キャラクター情報、交流相手キャラクターの名前・カテゴリ、関係タグ、初交流情報、個別エピソードのテキストを入力します。</p>
+                <p><strong>出力:</strong> 入力した交流情報をJSON形式で保存できます。また、Markdown形式やプレーンテキスト形式でまとめを出力でき、他のドキュメントやSNSへの転記に活用できます。</p>
+            </section>
+
+            <section>
+                <h2>補足情報</h2>
+                <ul>
+                    <li>PC専用ツールです。3カラムレイアウトを採用しているため、スマートフォンやタブレットでは正常に表示されません。</li>
+                    <li>データはlocalStorageに保存されません。ブラウザを閉じるとデータが失われるため、必ずJSON保存機能を使ってデータを保存してください。</li>
+                    <li>JSONファイルを読み込むことで、前回の作業状態から再開できます。</li>
+                </ul>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="https://tank-x3.github.io/ContactForm/" target="_blank" rel="noopener noreferrer">お問い合わせ</a>
+        </div>
+        <p>&copy; 2025 タンクの人</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5代血統表 作成ツールの使い方 - oriuma Tools</title>
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/manual.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <a href="../index.html">
+                <img src="../assets/images/portal/logo.png" alt="Logo" class="logo">
+            </a>
+            <div class="header-text">
+                <h1><a href="../index.html" class="header-link">oriuma Tools</a></h1>
+                <p>AIと一緒に作ったWebツールを公開しています。</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="manual-container">
+
+            <h1>5代血統表 作成ツールの使い方</h1>
+
+            <p>2代から5代までの血統表を作成・表示できるツールです。実在馬と架空馬の両方に対応しており、CSV形式でのデータ一括読み込みや、画像として保存する機能も備えています。</p>
+
+            <section>
+                <h2>基本的な使い方</h2>
+                <ol>
+                    <li>血統表に登録する馬の情報（馬名など）を入力します。実在馬の場合は欧字馬名が必須です。</li>
+                    <li>架空馬の場合はチェックボックスで「架空馬」を指定します。</li>
+                    <li>必要に応じて詳細情報（生産国、毛色、ファミリーNo.、系統名）を入力します。</li>
+                    <li>2代～5代の表示を切り替えて血統表を確認します。</li>
+                    <li>作成した血統表はローカル保存・サーバー保存、または画像として保存できます。</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>主な機能</h2>
+                <ul>
+                    <li>2代～5代の血統表作成・表示切替</li>
+                    <li>実在馬（欧字馬名必須）と架空馬（チェックボックスで指定）の両方に対応</li>
+                    <li>CSV形式でのデータ一括読み込み</li>
+                    <li>ローカル保存・サーバー保存</li>
+                    <li>血統表の画像保存</li>
+                    <li>詳細情報の入力（生産国、毛色、ファミリーNo.、系統名）</li>
+                    <li>DB形式の自動変換・差異検出</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>入力と出力</h2>
+                <p><strong>入力：</strong>馬名（実在馬は欧字馬名必須）、血統情報、詳細情報（生産国・毛色・ファミリーNo.・系統名）、またはCSV形式のデータ</p>
+                <p><strong>出力：</strong>2代～5代の血統表（画面表示）、画像ファイル（PNG等）、ローカル/サーバーへの保存データ</p>
+            </section>
+
+            <section>
+                <h2>補足情報</h2>
+                <ul>
+                    <li>実在馬を登録する場合、欧字（アルファベット）の馬名入力が必須となります。</li>
+                    <li>架空馬はチェックボックスで指定することで、欧字馬名なしでも登録できます。</li>
+                    <li>CSV形式で一括読み込みを行う場合は、所定のフォーマットに従ったデータを用意してください。</li>
+                    <li>DB形式の自動変換機能により、データベース向けのフォーマットへの変換や差異の検出が可能です。</li>
+                    <li>画像保存機能を利用すると、血統表をそのまま画像として共有できます。</li>
+                </ul>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="https://tank-x3.github.io/ContactForm/" target="_blank" rel="noopener noreferrer">お問い合わせ</a>
+        </div>
+        <p>&copy; 2025 タンクの人</p>
+    </footer>
+
+</body>
+</html>

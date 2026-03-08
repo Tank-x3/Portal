@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>オリウマデータベースの使い方 - oriuma Tools</title>
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/manual.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <a href="../index.html">
+                <img src="../assets/images/portal/logo.png" alt="Logo" class="logo">
+            </a>
+            <div class="header-text">
+                <h1><a href="../index.html" class="header-link">oriuma Tools</a></h1>
+                <p>AIと一緒に作ったWebツールを公開しています。</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="manual-container">
+
+            <h1>オリウマデータベースの使い方</h1>
+
+            <p>オリジナルキャラクター（オリウマ）の情報を登録・管理・検索できるデータベースツールです。キャラクター情報の一元管理やタグによる分類・検索が行えます。</p>
+
+            <section>
+                <h2>基本的な使い方</h2>
+                <ol>
+                    <li>キャラクターを新規登録します。名前（カナ・英語・香港用）、トレーナー名、アイコンURLなどの情報を入力してください。</li>
+                    <li>登録したキャラクターは一覧画面で確認できます。</li>
+                    <li>タグ検索や絞り込み機能を使って、目的のキャラクターを素早く見つけられます。</li>
+                    <li>キャラクター情報を編集するには、パスワードによる編集権限が必要です。</li>
+                    <li>データのバックアップはJSON形式で保存・復元が可能です。</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>主な機能</h2>
+                <ul>
+                    <li>キャラクター登録（名前（カナ・英語・香港用）、トレーナー名、アイコンURL）</li>
+                    <li>一覧表示・タグ検索・絞り込み</li>
+                    <li>パスワードによる編集権限管理</li>
+                    <li>タグ編集機能（閲覧者によるタグ編集の許可/禁止設定あり）</li>
+                    <li>JSONバックアップ保存・復元</li>
+                    <li>API接続テスト機能</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>入力と出力</h2>
+                <p><strong>入力:</strong> キャラクター情報（各種名前、トレーナー名、アイコンURL、タグなど）</p>
+                <p><strong>出力:</strong> キャラクター一覧の表示、検索結果の表示、JSONバックアップファイル</p>
+            </section>
+
+            <section>
+                <h2>補足情報</h2>
+                <ul>
+                    <li>アイコン画像は16:9の比率が推奨されています。推奨比率以外の画像を使用すると、表示が崩れる場合があります。</li>
+                    <li>編集権限はパスワードで管理されています。編集を行う際は正しいパスワードを入力してください。</li>
+                    <li>タグ編集の許可/禁止は、キャラクター登録者が設定できます。許可した場合、閲覧者もタグを追加・編集できます。</li>
+                    <li>定期的にJSONバックアップを取得しておくことを推奨します。</li>
+                    <li>API接続テスト機能で、データベースとの接続状態を確認できます。</li>
+                </ul>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="https://tank-x3.github.io/ContactForm/" target="_blank" rel="noopener noreferrer">お問い合わせ</a>
+        </div>
+        <p>&copy; 2025 タンクの人</p>
+    </footer>
+
+</body>
+</html>
