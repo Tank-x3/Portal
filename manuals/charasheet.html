@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>オリウマ用キャラシート作成機 の使い方 - oriuma Tools</title>
+    <link rel="stylesheet" href="../assets/css/common.style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <a href="../index.html"><img src="../assets/images/portal/logo.png" alt="Logo" class="logo"></a>
+            <div class="header-text">
+                <h1><a href="../index.html" class="header-link">oriuma Tools</a></h1>
+                <p>AIと一緒に作ったWebツールを公開しています。</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="manual-container">
+            
+            <h1>オリウマ用キャラシート作成機 の使い方</h1>
+            <p>このページでは、「オリウマ用キャラシート作成機」の基本的な使い方と、各機能の詳細について解説します。</p>
+
+            <!-- ====================================================== -->
+            <!-- 基本的な使い方（カルーセル） -->
+            <!-- ====================================================== -->
+            <section class="manual-section">
+                <h2>基本的な使い方</h2>
+                <p>まずは、基本的な使い方をステップごとに見ていきましょう。</p>
+                
+                <div class="carousel">
+                    <!-- カルーセルのスライド部分 -->
+                    <div class="carousel-slides">
+                        <!-- スライド 1 -->
+                        <div class="carousel-slide">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="../assets/images/manuals/charasheet/carousel-sp-001.png">
+                                <img src="../assets/images/manuals/charasheet/carousel-pc-001.png" alt="ステップ1の画像">
+                            </picture>
+                            <div class="carousel-caption">
+                                <p><strong>【PC】</strong>ツールを開きます。画面の左側が入力フォーム、右がプレビューです。</p>
+                                <p><strong>【スマホ】</strong>ツールを開きます。入力フォームの下にプレビューエリアがあります。</p>
+                            </div>
+                        </div>
+                        <!-- スライド 2 -->
+                        <div class="carousel-slide">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="../assets/images/manuals/charasheet/carousel-sp-002.png">
+                                <img src="../assets/images/manuals/charasheet/carousel-pc-002.png" alt="ステップ2の画像">
+                            </picture>
+                            <div class="carousel-caption">
+                                <p>必要な分だけ情報を入力します。必須項目は特にありません。未記入の場合、「---」と表示されます。</p>
+                            </div>
+                        </div>
+                        <!-- スライド 3 -->
+                        <div class="carousel-slide">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="../assets/images/manuals/charasheet/carousel-sp-003.png">
+                                <img src="../assets/images/manuals/charasheet/carousel-pc-003.png" alt="ステップ3の画像">
+                            </picture>
+                            <div class="carousel-caption">
+                                <p>すべて入力が終わったらプレビューエリアの内容を確認し、「画像として保存」をクリック/タップしてください。</p>
+                            </div>
+                        </div>
+                        <!-- スライド 4 -->
+                        <div class="carousel-slide">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="../assets/images/manuals/charasheet/carousel-sp-004.png">
+                                <img src="../assets/images/manuals/charasheet/carousel-pc-004.png" alt="ステップ4の画像">
+                            </picture>
+                            <div class="carousel-caption">
+                                <p>キャラシート画像とは別に、入力内容をデータとして保存することができます。バックアップなどにどうぞ。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- カルーセルの操作UI -->
+                    <div class="carousel-ui">
+                        <button class="carousel-prev">&lt; 前へ</button>
+                        <div class="carousel-counter"></div>
+                        <button class="carousel-next">次へ &gt;</button>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- ====================================================== -->
+            <!-- 各機能の詳細（目次＋縦積み） -->
+            <!-- ====================================================== -->
+            <section class="manual-section">
+                <h2>各機能の詳細</h2>
+                
+                <!-- 目次 -->
+                <nav class="toc">
+                    <ul>
+                        <li><a href="#details-input">入力できる情報</a></li>
+                        <li><a href="#details-buttons">各種ボタンの説明</a></li>
+                        <li><a href="#details-examples">作成例</a></li>
+                    </ul>
+                </nav>
+
+                <!-- セクション1: 入力できる情報 -->
+                <div id="details-input" class="detail-block">
+                    <h3>入力できる情報</h3>
+                    <img src="../assets/images/manuals/charasheet/details-001.png" alt="入力欄のスクリーンショット（基本情報）">
+                    <ul>
+                        <li><strong>名前（カタカナ、アルファベット、中国語）</strong><br>通常はカタカナ名がトップに表示されます。<a href="#alpha-priority">海外バ向けとして、欧字名を優先表示に切り替える</a>ことができます。</li>
+                        <li><strong>耳飾り</strong>（「右、左、両、なし」＋「自由入力」）</li>
+                        <li><strong>学年</strong>（「中等部、高等部」など＋自由入力）<br>飛び級などの特殊設定がある場合、プルダウンで（空欄）を選ぶと自由記述欄の内容が左詰めになります。</li>
+                        <li><strong>所属寮</strong>（「美浦、栗東、（空欄）」＋「自由入力」）<br>マルゼンスキーのような「一人暮らし」などは（空欄）を選んで自由記述のみで入力してください。</li>
+                        <li><strong>誕生日</strong>（月＋日）</li>
+                        <li><strong>身長</strong>（数字のみ入力、空欄でなければ自動で「cm」を追加して表示します）</li>
+                        <li><strong>体重</strong>（自由入力）</li>
+                        <li><strong>スリーサイズ</strong>（自由入力。「ちょっと細め」とか書いても大丈夫です）</li>
+                    </ul>
+                    <img src="../assets/images/manuals/charasheet/details-002.png" alt="入力欄のスクリーンショット（適正情報＋容姿・その他）">
+                    <ul>
+                        <li><strong>各種適性</strong>（S-G、未設定）</li>
+                        <li><strong>髪型</strong></li>
+                        <li><strong>髪色/毛色</strong></li>
+                        <li><strong>特徴</strong>（流星などの外見上の特徴を想定）</li>
+                        <li><strong>瞳の色</strong></li>
+                        <li><strong>自由記述欄</strong>（改行可能）</li>
+                    </ul>
+                </div>
+
+                <!-- セクション2: 各種ボタンの説明 -->
+                <div id="details-buttons" class="detail-block">
+                    <h3>各種ボタンの説明</h3>
+                    <img src="../assets/images/manuals/charasheet/details-003.png" alt="ボタンのスクリーンショット（入力フォームエリア）">
+                    <ol>
+                        <li><strong>記入例</strong><br>入力済の内容を破棄して、入力例のデータに置き換えます。</li>
+                        <li><strong>リセット</strong><br>入力済の内容を破棄して、すべての入力欄を未入力の状態に戻します。</li>
+                        <li><strong>データ保存</strong><br>現在入力されている情報をJSONファイルとして保存します。ファイル名はデフォルトでカタカナ名が使用されます。</li>
+                        <li><strong>データ読み込み</strong><br>このツールで作成したJSONファイルを読み込む事ができます。</li>
+                        <li><strong>テーマ切り替えボタン</strong><br>ダーク/ライトテーマを切り替えられます。</li>
+                    </ol>
+                    <img src="../assets/images/manuals/charasheet/details-004.png" alt="ボタンのスクリーンショット（画像として保存）">
+                    <ol start="6">
+                        <li><strong>画像として保存</strong><br>プレビューを横1400px固定のpngファイルで保存します。ダークテーマ表示中は、保存時の配色を選択できます。</li>
+                    </ol>
+                </div>
+
+<!-- セクション3: 作成例 -->
+<div id="details-examples" class="detail-block">
+    <h3>作成例</h3>
+
+    <!-- 作成例 1: ライトテーマ -->
+    <div class="example-item">
+        <p class="example-label"><strong>ライトテーマ</strong></p>
+        <img src="../assets/images/manuals/charasheet/details-005.png" alt="ライトテーマのキャラシート画像例">
+    </div>
+    
+    <!-- 作成例 2: 欧字名優先 -->
+    <!-- アンカーリンクが正しく機能するよう、idを親divに移動 -->
+    <div class="example-item" id="alpha-priority">
+        <p class="example-label"><strong>欧字名優先設定時</strong></p>
+        <img src="../assets/images/manuals/charasheet/details-006.png" alt="ライトテーマのキャラシート画像例_アルファベット優先設定時">
+    </div>
+    
+    <!-- 作成例 3: ダークテーマ -->
+    <div class="example-item">
+        <p class="example-label"><strong>ダークテーマ</strong></p>
+        <img src="../assets/images/manuals/charasheet/details-007.png" alt="ダークテーマのキャラシート画像例">
+    </div>
+</div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 [あなたの名前]</p>
+    </footer>
+    
+    <!-- カルーセル用のJavaScriptを読み込み -->
+    <script src="../assets/js/carousel.js"></script>
+
+</body>
+</html>
